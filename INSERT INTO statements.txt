@@ -1,0 +1,7 @@
+16/10/2023 --> 15:18
+
+INSERT INTO genres(Name, Fiction) VALUES('Fantasy', True), ('Sci-Fi', True), ('Crime', True), ('Romance', True), ('Thriller', True), ('Young Adult', True), ('Textbook', False), ('Travel', False), ('Historical', True), ('Science', False), ('Childrens', True), ('Poetry', True);
+
+INSERT INTO publisher(Name) VALUES('Penguin'), ('Penguin Random House'), ('Vintage'), ('Bloomsbury'), ('Oxford University Press'), ('Wiley');
+
+INSERT INTO authors(Name, Dead) VALUES('Rick Riodan', False), ('J. R. R. Tolkien', True), ('J. K. Rowling', False), ('Dick King Smith', True), ('Dan Brown', False), ('Michael Crichton', True), ('H. G. Wells', True), ('Stephen Hawkings', True), ('W. B. Yeats', True), ('Simon Armitage', False);
