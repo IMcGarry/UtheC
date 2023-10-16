@@ -1,7 +1,7 @@
 Book[BookID PRIMARY KEY, Title VARCHAR(), AuthorID INT REFERENCES Author, PublisherID INT REFERENCES Publisher, GenreID INT References Genre, Hardcover BOOLEAN, ISBN INT]
 Author[AuthorID INT PRIMARY KEY, Name VARCHAR, Dead BOOLEAN]
-Publisher[PublisherID PRIMARY KEY INT, Name VARCHAR, Copyright BOOLEAN]
+Publisher[PublisherID PRIMARY KEY INT, Name VARCHAR]
 Customer[CustomerID INT PRIMARY KEY, Name VARCHAR, Phone Number VARCHAR, Email VARCHAR, Address TEXT]
 Order[OrderID INT PRIMARY KEY, Date DATETIME, Price FLOAT, no. of Items INT]
 OrderDetails[OrderID INT REFERENCES Order, BookID INT REFERENCES Book, Quantity INT]
-
+Genre[GenreID INT, Name, Fiction BOOLEAN]
