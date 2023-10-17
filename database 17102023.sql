@@ -78,6 +78,16 @@ FOREIGN KEY (orderID) REFERENCES Orders(orderID)
 );
 
 
+CREATE TABLE users(
+username VARCHAR(255),
+password VARCHAR(255)
+);
+SELECT * FROM users;
+DELIMITER //
+CREATE PROCEDURE createNewUser(IN inputUsername VARCHAR(255), IN inputPass VARCHAR(255))
+INSERT INTO users(username, password) VALUES(inputUsername, SHA2(inputPass, 512));
+//
+
 
 INSERT INTO genres(name, fiction) VALUES('Fantasy', true), ('Sci-fi', true), ('Play', true), ('Thriller', true), ('Magical Realism', true), ('Short stories', true), ('Philosophical Fiction', true), ('Science', false);
 INSERT INTO authors(name, dead, alias) VALUES('John Ronald Reuel Tolkien', true, 'J. R. R. Tolkien'), ('William Gibson', false, 'Gibson'), ('Joanne Rowling', false, 'J. K. Rowling'), ('Dan Brown', false, 'Brown'), ('Haruki Murakami', false, 'Murakami'), ('John Grisham', false, 'Grisham'), ('Hermann Hesse', true, 'Hesse'), ('Stephen Hawking', true, 'Hawking');
