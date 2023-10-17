@@ -1,0 +1,8 @@
+1: Fantasy /// Tolkien /// Harper Collins
+2: Sci-Fi /// William Gibson /// Ace
+3: Play /// J. K. Rowling /// Bloomsbury
+4: Thriller /// Dan Brown /// Doubleday
+5: Magical Realism /// Haruki Murakami /// Penguin
+6: Short Stories /// John Grisham /// Wynwood Press
+7: Philosophical Fiction /// Hermann Hesse /// Penguin modern Classics
+8: Science /// Stephen Hawking /// Hodder and Stoughton
