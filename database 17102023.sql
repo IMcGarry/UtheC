@@ -1,5 +1,6 @@
 USE uthec;
 
+
 CREATE TABLE Authors(
 name VARCHAR(255),
 authorID INT NOT NULL AUTO_INCREMENT,
@@ -15,6 +16,13 @@ publisherID INT NOT NULL AUTO_INCREMENT,
 PRIMARY KEY (publisherID)
 );
 
+CREATE TABLE Genres(
+genreID INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(255),
+fiction BOOLEAN,
+PRIMARY KEY (genreID)
+);
+
 CREATE TABLE Books(
 bookID INT AUTO_INCREMENT,
 title VARCHAR(255),
@@ -24,7 +32,7 @@ publisherID INT,
 ISBN VARCHAR(100),
 hardcover boolean,
 quantity INT,
-price DECIMAL,
+price DECIMAL(6,2),
 FOREIGN KEY (authorID) REFERENCES Authors(authorID),
 FOREIGN KEY (genreID) REFERENCES Genres(genreID),
 FOREIGN KEY (publisherID) REFERENCES Publishers(publisherID),
@@ -69,12 +77,7 @@ price_per_book DECIMAL,
 FOREIGN KEY (orderID) REFERENCES Orders(orderID)
 );
 
-CREATE TABLE Genres(
-genreID INT NOT NULL AUTO_INCREMENT,
-name VARCHAR(255),
-fiction BOOLEAN,
-PRIMARY KEY (genreID)
-);
+
 
 INSERT INTO genres(name, fiction) VALUES('Fantasy', true), ('Sci-fi', true), ('Play', true), ('Thriller', true), ('Magical Realism', true), ('Short stories', true), ('Philosophical Fiction', true), ('Science', false);
 INSERT INTO authors(name, dead, alias) VALUES('John Ronald Reuel Tolkien', true, 'J. R. R. Tolkien'), ('William Gibson', false, 'Gibson'), ('Joanne Rowling', false, 'J. K. Rowling'), ('Dan Brown', false, 'Brown'), ('Haruki Murakami', false, 'Murakami'), ('John Grisham', false, 'Grisham'), ('Hermann Hesse', true, 'Hesse'), ('Stephen Hawking', true, 'Hawking');
