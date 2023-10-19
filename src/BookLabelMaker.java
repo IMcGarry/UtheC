@@ -9,10 +9,14 @@ import java.io.IOException;
 public class BookLabelMaker extends JLabel {
     ImageIcon imageIc;
 
+<<<<<<< HEAD
     public String bookPath;
 
     public BookLabelMaker(String url){
         this.bookPath=url;
+=======
+    public BookLabelMaker(String url){
+>>>>>>> main
         this.setBorder(new EmptyBorder(10, 10, 10, 10));
         Color lightBlue1 = Color.decode("#A4E6E6");
         try{

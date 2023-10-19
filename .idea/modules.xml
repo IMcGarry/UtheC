@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/UndertheCoversStore.iml" filepath="$PROJECT_DIR$/UndertheCoversStore.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/uthec.iml" filepath="$PROJECT_DIR$/uthec.iml" />
+>>>>>>> main
     </modules>
   </component>
 </project>
