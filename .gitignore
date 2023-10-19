@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -13,17 +12,13 @@ target/
 *.iws
 *.iml
 *.ipr
-=======
-=======
->>>>>>> main
+
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-<<<<<<< HEAD
->>>>>>> bed66ac (front end java 1)
-=======
->>>>>>> main
+
 
 ### Eclipse ###
 .apt_generated
@@ -33,18 +28,15 @@ out/
 .settings
 .springBeans
 .sts4-cache
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
->>>>>>> bed66ac (front end java 1)
-=======
+
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
->>>>>>> main
+
 
 ### NetBeans ###
 /nbproject/private/
@@ -52,15 +44,11 @@ bin/
 /dist/
 /nbdist/
 /.nb-gradle/
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-=======
->>>>>>> bed66ac (front end java 1)
-=======
->>>>>>> main
+
 
 ### VS Code ###
 .vscode/
@@ -69,15 +57,14 @@ build/
 <<<<<<< HEAD
 <<<<<<< HEAD
 .DS_Store
-=======
+
 .DS_Store
 
 ### Images for the Book Covers ###
 .Book_images
->>>>>>> bed66ac (front end java 1)
-=======
+
 .DS_Store
 
 ### Images for the Book Covers ###
 .Book_images
->>>>>>> main
+
