@@ -1,22 +1,20 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-<<<<<<< HEAD
 import java.sql.SQLException;
 
 
 public class BookListener implements MouseListener {
     public String bookPath;
-=======
-public class BookListener implements MouseListener {
+
+    public class BookListener implements MouseListener {
     private String bookPath;
->>>>>>> main
     JDialog popUp = null;
     public BookListener(String path){
         this.bookPath = path;
     }
 
-<<<<<<< HEAD
+
     public void setBookPath(String s){
         bookPath = s;
     }
@@ -25,8 +23,7 @@ public class BookListener implements MouseListener {
         return bookPath;
     }
 
-=======
->>>>>>> main
+
     private void createPopUp(String bookPath){
         popUp = new JDialog();
         popUp.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
@@ -36,10 +33,9 @@ public class BookListener implements MouseListener {
         JLabel bookCoverLabel = new JLabel(bookCover);
 
         popUp.add(bookCoverLabel);
-<<<<<<< HEAD
+
         popUp.setAlwaysOnTop(true);
-=======
->>>>>>> main
+
         popUp.pack();
         popUp.setVisible(true);
 
@@ -54,7 +50,7 @@ public class BookListener implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-<<<<<<< HEAD
+
         Object obj = e.getSource();
         if(obj instanceof BookLabelMaker){
             setBookPath(((BookLabelMaker) obj).bookPath);
@@ -69,10 +65,10 @@ public class BookListener implements MouseListener {
                 throw new RuntimeException(ex);
             }
 
-=======
+
         if(popUp == null){
             createPopUp(bookPath);
->>>>>>> main
+
         }
 
     }
