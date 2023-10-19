@@ -1,5 +1,9 @@
 import javax.swing.*;
 import java.awt.event.*;
+<<<<<<< HEAD
+=======
+import java.sql.SQLException;
+>>>>>>> 5415c1b936c2c3d293bc7986a7d2996151ef9343
 
 public class BookListener implements MouseListener {
     private String bookPath;
@@ -33,6 +37,15 @@ public class BookListener implements MouseListener {
     public void mouseClicked(MouseEvent e) {
         if(popUp == null){
             createPopUp(bookPath);
+<<<<<<< HEAD
+=======
+            DatabaseController databaseController = new DatabaseController();
+            try {
+                databaseController.GetBookDetails(bookPath);
+            } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            }
+>>>>>>> 5415c1b936c2c3d293bc7986a7d2996151ef9343
         }
 
     }
